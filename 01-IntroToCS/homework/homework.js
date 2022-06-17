@@ -11,7 +11,13 @@ return resultado;
 
 function DecimalABinario(num) {
   // tu codigo aca
-
+let resultado = "";
+while(num > 0) {
+  let resto = num % 2;
+  resultado = resto + resultado;
+  num = Math.floor(num / 2);
+}
+return resultado;
 }
 
 
